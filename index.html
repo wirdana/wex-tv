@@ -1,0 +1,117 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- Shaka Player ui compiled library: -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/3.0.3/shaka-player.ui.js"></script> -->
+    <!-- Shaka Player ui compiled library default CSS: -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/3.0.3/controls.css" /> -->
+    <!-- Chromecast SDK (if you want Chromecast support for your app): -->
+    <script defer src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
+    <!-- Your application source: -->
+    <script src="myapp.js"></script>
+    <title>WeX-tv (Beta)</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">WeX-tv</h1>
+            </div>
+            <!-- <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Beranda</li>
+                    <li class="menu-list-item">Live TV</li>
+                    <li class="menu-list-item">Movies</li>
+                    <li class="menu-list-item">Series</li>
+                    <li class="menu-list-item">Popular</li>
+                    <li class="menu-list-item">Trends</li>
+
+                </ul>
+            </div> -->
+            <div class="profile-container">
+                <!-- <img class="profile-picture" src="img/profile.jpg" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fas fa-caret-down"></i>
+                </div> -->
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="sidebar">
+        <i class="left-menu-icon fas fa-search"></i>
+        <i class="left-menu-icon fas fa-home"></i>
+        <i class="left-menu-icon fas fa-users"></i>
+        <i class="left-menu-icon fas fa-bookmark"></i>
+        <i class="left-menu-icon fas fa-tv"></i>
+        <i class="left-menu-icon fas fa-hourglass-start"></i>
+        <i class="left-menu-icon fas fa-shopping-cart"></i>
+    </div> -->
+    <div class="container">
+        <!-- <div class="content-container">
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/tvindo/mnctv.jpg" alt="">
+                        <a href="mnctv.html"><button class="movie-list-item-button">TONTON</button></a>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/tvindo/rcti.jpg" alt="">
+                        <a href="rcti.html"><button class="movie-list-item-button">TONTON</button></a>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/tvindo/gtv.jpg" alt="">
+                        <a href="gtv.html"><button class="movie-list-item-button">TONTON</button></a>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/tvindo/inews.jpg" alt="">
+                        <a href="inews.html"><button class="movie-list-item-button">TONTON</button></a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="content-container">
+            <table border="0px" >
+                <tr>
+                    <td><div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/tvindo/mnctv.jpg" alt="">
+                        <a href="mnctv.html"><button class="movie-list-item-button">TONTON</button></a>
+                    </div></td>
+                    <td> <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/tvindo/rcti.jpg" alt="">
+                        <a href="rcti.html"><button class="movie-list-item-button">TONTON</button></a>
+                    </div></td>
+                </tr>
+                <tr>
+                    <td><div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/tvindo/gtv.jpg" alt="">
+                        <a href="gtv.html"><button class="movie-list-item-button">TONTON</button></a>
+                    </div></td>
+                    <td><div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/tvindo/inews.jpg" alt="">
+                        <a href="inews.html"><button class="movie-list-item-button">TONTON</button></a>
+                    </div></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
