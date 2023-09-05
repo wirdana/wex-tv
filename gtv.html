@@ -9,62 +9,12 @@
     <style>
         html,
         body {
-            height: 100%
+            
         }
         .jw-rightclick { display: none !important; }
     </style>
-    <script src="https://content.jwplatform.com/libraries/CaCb0lHw.js"></script>
-    <div id="player-container"></div>
-    <script>
-        var player = jwplayer('player-container');
-        player.setup({
-            width: "100%",
-            key: "cLGMn8T20tGvW+0eXPhq4NNmLB57TrscPjd1IyJF84o=",
-            height: "100%",
-            "logo": {
-                "file": "img/tvindo/logo.jpg",
-                "link": "https://wirdana.github.io/wex-tv",
-                "hide": "true",
-                "margin": '5',
-                "position": "control-bar"
-            },
-            autoplaytimer: '1',
-            // sources: [{
-            //     file: "https://anv-livechannel-cdn.mncnow.id/live/eds/GTV-2/sa_hls/GTV-2.m3u8"
-            // }
-            // ],
-            // mediaid: 'EqK9JUO2',
-            autostart: 'true',
-            "playlist": [{
-                "file": "https://anv-livechannel-cdn.mncnow.id/live/eds/GTV-2/sa_hls/GTV-2.m3u8",
-                "image": "img/tvindo/gtv.jpg",
-                "title": "GTV",
-                "mediaid": "ddrx3v2"
-            }, {
-                "file": "https://anv-livechannel-cdn.mncnow.id/live/eds/inews-hdd/sa_hls/inews-hdd.m3u8",
-                "image": "img/tvindo/inews.jpg",
-                "title": "INEWS",
-                "mediaid": "ddrx3v2"
-            }, {
-                "file": "https://nyanv-live-cdn.mncnow.id/live/eds/MNCTV-HD/sa_hls_vmx/MNCTV-HD.m3u8",
-                "image": "img/tvindo/mnctv.jpg",
-                "title": "MNCTV",
-                "mediaid": "ddra573",
-            }, {
-                "file": "https://anv-livechannel-cdn.mncnow.id/live/eds/rcti-2/sa_hls/rcti-2.m3u8",
-                "image": "img/tvindo/rcti.jpg",
-                "title": "RCTI",
-                "mediaid": "ddrx3v2"
-        }]
-        }).on('play', function (event) {
-            console.log('playing');
-        });
-
-    </script>
 </head>
-
 <body>
-
+  <iframe src="https://id.mixstreams.org/embed/gtv/" width="100%" height="320" scrolling="no" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; fullscreen; geolocation; web-share;  screen-wake-lock; idle-detection" allowfullscreen></iframe>
 </body>
-
 </html>
