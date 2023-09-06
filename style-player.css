@@ -25,7 +25,7 @@ body {
 #my-video {
   box-shadow: 0 0 20px 0px black;
   min-width:80%;
-  min-height:80%;
+  min-height:50%;
 }
 
 /* $primaryColor: #444;
