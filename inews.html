@@ -1,61 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+<script src="https://content.jwplatform.com/libraries/xZ88RwO4.js"</script>
+<script>jwplayer.key="zTEbSn/eAplL0RLXT030FzOcek6qXmtrxju6Jg=="</script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inews</title>
-    <style>
-        html,
-        body {
-            height: 100%
-        }
-    </style>
-    <script src="https://content.jwplatform.com/libraries/CaCb0lHw.js"></script>
-    <div id="player-container"></div>
-    <script>
-        var player = jwplayer('player-container');
-        player.setup({
-            width: "100%",
-            key: "cLGMn8T20tGvW+0eXPhq4NNmLB57TrscPjd1IyJF84o=",
-            height: "100%",
-            sources: [{
-                file: "https://anv-livechannel-cdn.mncnow.id/live/eds/inews-hdd/sa_hls/inews-hdd.m3u8"
-            }
-            ],
-            mediaid: 'EqK9JUO2',
-            autostart: 'true',
-            "playlist": [{
-                "file": "https://anv-livechannel-cdn.mncnow.id/live/eds/inews-hdd/sa_hls/inews-hdd.m3u8",
-                "image": "img/tvindo/inews.jpg",
-                "title": "INEWS",
-                "mediaid": "ddrx3v2"
-            }, {
-                "file": "https://anv-livechannel-cdn.mncnow.id/live/eds/MNCTV-HD2/sa_hls/MNCTV-HD2.m3u8",
-                "image": "img/tvindo/mnctv.jpg",
-                "title": "MNCTV",
-                "mediaid": "ddra573",
-            }, {
-                "file": "https://anv-livechannel-cdn.mncnow.id/live/eds/rcti-2/sa_hls/rcti-2.m3u8",
-                "image": "img/tvindo/rcti.jpg",
-                "title": "RCTI",
-                "mediaid": "ddrx3v2"
-            }, {
-                "file": "https://anv-livechannel-cdn.mncnow.id/live/eds/GTV-2/sa_hls/GTV-2.m3u8",
-                "image": "img/tvindo/gtv.jpg",
-                "title": "GTV",
-                "mediaid": "ddrx3v2"
-            }]
-        }).on('play', function (event) {
-            console.log('playing');
-        });
-
-    </script>
-</head>
-
-<body>
-
-</body>
-
-</html>
+<div id="my-video"></div>
+<script type="text/javascript">
+jwplayer("my-video").setup({
+file: "https://nyanv-live-cdn.mncnow.id/live/eds/GTV-2/sa_hls/GTV-2.m3u8",
+image: "https://content.jwplatform.com/thumbs/Wf8BfcSt-640.jpg",
+width: "580",
+height: "370",
+primary: "html5",
+advertising: { 
+  client: "vast",
+  schedule: {"myAds":{"offset":"pre","tag":"http://ads.stickyadstv.com/vast/vpaid-adapter/1240937?loc=www.dailymotion.com&playerSize=640x480&deviceIfa=201F2EB1-8041-9E39-CD07-FCBBA5A29B41&appName=dailymotion.com&appPaid=0&appBundle=com.foo.mygame&skip=1&appVersion=123456&appPaid=0&VIDEO=295221567&DURATION=vlong&VIDEO_URL=http://dai.ly/x4vrmf3&VERTICALS=fun&SMODE=vod&ADPARAM=&PRIVATE=0&OWNER_XID=x1b2bwz&PARENT_OWNER_XID=&TAGS=Thinking%20outside%20the%20box&&TITLE=Young%20Girl%20Questions%20Gendering%20of%20Kids%20Clothes&VIDEO_LANG=en&TYPE=verified&VIDEO_DURATION=157&DEVICE=&PLAYER_TYPE=html&COUNTRY=US&CITY=New%20&LANG=en&PAGE=playerpage&DESCRIPTION=fun.dailymotion.com&IP=192.168.70.218&PLATFORM&PLAYLIST=&ENVIRONMENT=prod&GK1=0&GK2=1&GK3=0&GK4=0&GK5=0&CUSTOM1=&DOMAINLIST=googleadxwhite"}}
+  }
+});
+</script>
