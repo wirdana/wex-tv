@@ -1,26 +1,61 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RCTI</title>
+    <style>
+        html,
+        body {
+            height: 100%
+        }
+    </style>
+    <script src="https://content.jwplatform.com/libraries/CaCb0lHw.js"></script>
+    <div id="player-container"></div>
+    <script>
+        var player = jwplayer('player-container');
+        player.setup({
+            width: "100%",
+            key: "cLGMn8T20tGvW+0eXPhq4NNmLB57TrscPjd1IyJF84o=",
+            height: "100%",
+            sources: [{
+                file: "https://nyanv-live-cdn.mncnow.id/live/eds/rcti-2/sa_hls/rcti-2.m3u8"
+            }
+            ],
+            mediaid: 'EqK9JUO2',
+            autostart: 'true',
+            "playlist": [{
+                "file": "https://anv-livechannel-cdn.mncnow.id/live/eds/rcti-2/sa_hls/rcti-2.m3u8",
+                "image": "img/tvindo/rcti.jpg",
+                "title": "RCTI",
+                "mediaid": "ddrx3v2"
+            }, {
+                "file": "https://anv-livechannel-cdn.mncnow.id/live/eds/GTV-2/sa_hls/GTV-2.m3u8",
+                "image": "img/tvindo/gtv.jpg",
+                "title": "GTV",
+                "mediaid": "ddrx3v2"
+            }, {
+                "file": "https://anv-livechannel-cdn.mncnow.id/live/eds/inews-hdd/sa_hls/inews-hdd.m3u8",
+                "image": "img/tvindo/inews.jpg",
+                "title": "INEWS",
+                "mediaid": "ddrx3v2"
+            }, {
+                "file": "https://anv-livechannel-cdn.mncnow.id/live/eds/MNCTV-HD2/sa_hls/MNCTV-HD2.m3u8",
+                "image": "img/tvindo/mnctv.jpg",
+                "title": "MNCTV",
+                "mediaid": "ddra573",
+            }]
+        }).on('play', function (event) {
+            console.log('playing');
+        });
+
+    </script>
 </head>
-<script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
-<link rel="stylesheet" href="https://vjs.zencdn.net/7.1.0/video-js.css">
-<link rel="stylesheet" href="style-player.css">
+
 <body>
-    <div class="container">
-        <video id=my-video class="video-js vjs-default-skin" data-setup='{"autoplay": true, "muted": true}' controls="">
-          <source     
-             src="https://nyanv-live-cdn.mncnow.id/live/eds/rcti-2/sa_hls/rcti-2.m3u8"
-              type="application/x-mpegURL">
-      
-          </video>
-      
-      </div>
+
 </body>
-<script src="app-player.js"></script>
-<script>
-    var video = document.querySelector('video');
-    var player = videojs(video);
-    player.muted(true);
-    player.autoplay(true);
-  </script>
+
 </html>
