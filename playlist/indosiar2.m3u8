@@ -1,7 +1,7 @@
 #EXTM3U
 #EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=200000
-low/http://kuchini.site:8080/GenIptvLast/cGW7qTY5txZ3DOfz/162138
+http://kuchini.site:8080/devtv/5af3eeb538/16213
 #EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=311111
-middle/http://kuchini.site:8080/GenIptvLast/cGW7qTY5txZ3DOfz/162138
+http://kuchini.site:8080/devtv/5af3eeb538/16213
 #EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=484444
-high/http://kuchini.site:8080/GenIptvLast/cGW7qTY5txZ3DOfz/162138
+http://kuchini.site:8080/devtv/5af3eeb538/16213
